@@ -1,0 +1,318 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdf8f5;
+      color: black;
+      animation: changeimg 20s linear infinite;
+      background-size: cover;
+        box-shadow: rgba(149, 157, 165, 0.2)0px 8px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+  background: linear-gradient(to right, #fcefee, #fffaf0);
+     
+      
+    }
+    body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(255, 255, 255, 0.5); /* halka safed overlay */
+  z-index: -1;
+}
+    @keyframes changeimg {
+        0%{background-color: #ccc;}
+        100%{background-color: blanchedalmond;}
+      }
+    
+    header {
+      background-color:#6d3c3c;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0px;
+      
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      animation-name: c;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction:normal;
+      position: relative;
+    }
+    @keyframes c {
+      0%{left:10;top:0;}
+      25% {top:10px; background-color:#999; color: pink;}
+    }
+    nav{
+     
+      padding: 50px;
+      display: flex;
+      justify-content: end;
+      margin: 30px;
+      border-radius: 10px;
+      height: 10px;
+      align-items: center;
+    }
+     a{
+      text-decoration: none;
+      color: black;
+     margin-left: 20px;
+     text-align: center;
+     font-size: 25px;
+     font-style: italic;
+     animation: changecolor  2s linear infinite;
+    }
+    @keyframes changecolor {
+    0%{color: black; font-style: italic;}
+    25%{color: #9f4b4b; font-style: italic;}
+    50%{color: deepskyblue;}
+    75%{color: purple;}
+    100%{color: skyblue;}
+
+    }
+    a:hover{
+     background-color: #999;
+     border: 4px solid #9f4b4b;
+     border-radius: 10px;
+     color: white;
+     border: #999;
+    }
+   .slider {
+  width: 90%;
+      height: 550px;
+      background-size: cover;
+      background-position: center;
+      animation: changeImage 10s infinite;
+      border-radius: 20px;
+      margin: 20px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+@keyframes changeImage {
+  0%   { background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20250305/pngtree-elegant-floral-wedding-stage-with-golden-accents-and-luxurious-decorations-image_17062748.jpg'); }
+  25%  { background-image: url('https://i.pinimg.com/736x/64/05/f5/6405f5defeafa35bb453b7cd41f809cc.jpg'); }
+  50%  { background-image: url('https://images.unsplash.com/photo-1595436805731-10652dcd9de8?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZyUyMGRlY29yfGVufDB8fDB8fHww'); }
+  75%  { background-image: url('https://angela-flower.com/cdn/shop/files/2_23c48282-63bb-4987-9ca7-b0a3f8546cdd.jpg?v=1735374922&width=1780'); }
+  100% { background-image: url('https://angela-flower.com/cdn/shop/files/2_23c48282-63bb-4987-9ca7-b0a3f8546cdd.jpg?v=1735374922&width=1780'); }
+}
+  
+
+   
+   
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .gallery img {
+      width: 250px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    form input, form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 12px 30px;
+      background: #9f4b4b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #6d3c3c;
+    }
+    
+    footer {
+      background: #6d3c3c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    main{
+      padding: 40px;
+      font-size: 20px;
+    }
+    main h2{
+      color: #9f4b4b;
+    }
+    /* Mobile Screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+
+  header h1 {
+    font-size: 1.8em;
+    padding: 20px 10px;
+  }
+  nav {
+    padding: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+
+ 
+ .slider {
+    height: 250px;
+    border-radius: 10px;
+  }
+
+
+  main {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  .gallery img, section img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+
+  form input, form textarea {
+    width: 95%;
+  }
+
+  form button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  div[style*="display: flex"] {
+    flex-wrap: wrap;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+
+  div[style*="display: flex"] img {
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Tablets (601px to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+  header h1 {
+    font-size: 2.2em;
+    padding: 30px 15px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  main {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .gallery img, section img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+
+  form input, form textarea {
+    width: 90%;
+  }
+
+  form button {
+    padding: 12px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  div[style*="display: flex"] {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  div[style*="display: flex"] img {
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+}
+h2{
+  font-size: 24px;
+  
+}
+.img-one{
+  animation: img-one 2s linear infinite;
+}
+@keyframes img-one{
+  0%{border: 10px solid #6d3c3c;}
+  20%{border: 10px solid  #999;}
+  50%{border: 10px solid rgb(193, 89, 89);}
+  75%{border: 10px solid seagreen;}
+  100%{border: 10px solid wheat;}
+}
+.img{
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  animation: img 2s linear infinite;
+  margin-top: 30px;
+  
+}
+@keyframes img{
+  0%{border: 5px solid #9f4b4b;}
+  20%{border: 5px solid #ccc ;}
+  50%{border: 5px solid yellowgreen;}
+  75%{border: 5px solid whitesmoke;}
+  100%{border: 5px solid #6d3c3c;}
+}
+.circle{
+  animation: circle 2s linear infinite;
+  border:  2px solid #9f4b4b
+}
+@keyframes circle {
+ from{border-radius: 10px; border: 2px solid #ccc;}
+      to{border-radius: 50%; border:2px solid #6d3c3c}
+}
+.link{
+  display: flex;
+}
